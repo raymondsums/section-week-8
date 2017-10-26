@@ -45,7 +45,7 @@ def search_flickr(search_term):
             "photo_id": search_term
         }
     else:
-        pass
+        print("No input provided")
 
     unique_ident = params_unique_combination(baseurl,params_diction)
     if unique_ident in CACHE_DICTION:
